@@ -147,7 +147,7 @@ export default function HomePage() {
           priority
           quality={80}
         />
-        <div style={{ position: "absolute", inset: 0, backgroundColor: "rgba(0,0,0,0.50)" }} aria-hidden="true" />
+        <div style={{ position: "absolute", inset: 0, backgroundColor: "rgba(0,0,0,0.60)" }} aria-hidden="true" />
         <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: "140px", background: "linear-gradient(to top, #0F0A1A, transparent)" }} aria-hidden="true" />
 
         <div style={{ maxWidth: "800px", margin: "0 auto", position: "relative", zIndex: 10, padding: "80px 16px 100px" }}>
@@ -176,6 +176,7 @@ export default function HomePage() {
               lineHeight: 1.1,
               margin: "0 0 20px",
               letterSpacing: "-0.02em",
+              textShadow: "0 2px 12px rgba(0,0,0,0.8)",
             }}
           >
             <span style={{ color: "#F8FAFC" }}>Crazy Time Italia –{" "}</span>
@@ -200,6 +201,7 @@ export default function HomePage() {
               maxWidth: "600px",
               marginLeft: "auto",
               marginRight: "auto",
+              textShadow: "0 2px 12px rgba(0,0,0,0.8)",
             }}
           >
             Il game show live casino più popolare di Evolution Gaming: una ruota a 54 segmenti, quattro round bonus mozzafiato e moltiplicatori fino a{" "}

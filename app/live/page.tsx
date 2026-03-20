@@ -87,7 +87,7 @@ export default function LivePage() {
             priority
             quality={80}
           />
-          <div style={{ position: "absolute", inset: 0, backgroundColor: "rgba(0,0,0,0.50)" }} aria-hidden="true" />
+          <div style={{ position: "absolute", inset: 0, backgroundColor: "rgba(0,0,0,0.60)" }} aria-hidden="true" />
           <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: "100px", background: "linear-gradient(to top, #0F0A1A, transparent)" }} aria-hidden="true" />
           {/* Live badge */}
           <div style={{ position: "absolute", top: "20px", right: "20px", zIndex: 10, display: "flex", alignItems: "center", gap: "6px", background: "rgba(239,68,68,0.9)", borderRadius: "999px", padding: "6px 14px" }}>

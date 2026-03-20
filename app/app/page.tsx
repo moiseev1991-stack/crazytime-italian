@@ -110,7 +110,7 @@ export default function AppPage() {
             priority
             quality={80}
           />
-          <div style={{ position: "absolute", inset: 0, backgroundColor: "rgba(0,0,0,0.55)" }} aria-hidden="true" />
+          <div style={{ position: "absolute", inset: 0, backgroundColor: "rgba(0,0,0,0.60)" }} aria-hidden="true" />
           <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: "100px", background: "linear-gradient(to top, #0F0A1A, transparent)" }} aria-hidden="true" />
           <div style={{ position: "relative", zIndex: 10, padding: "40px 32px" }}>
             <h1
