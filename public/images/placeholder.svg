@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <rect width="600" height="400" fill="#1A1128"/>
+  <rect x="1" y="1" width="598" height="398" fill="none" stroke="#2D2245" stroke-width="2"/>
+  <text x="300" y="190" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" fill="#94A3B8">Image</text>
+  <text x="300" y="215" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#64748B">600 × 400</text>
+  <circle cx="300" cy="150" r="30" fill="#2D2245" stroke="#7B2FBE" stroke-width="2"/>
+  <text x="300" y="156" text-anchor="middle" font-family="system-ui, sans-serif" font-size="20" fill="#7B2FBE">🎡</text>
+</svg>
