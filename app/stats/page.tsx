@@ -69,15 +69,7 @@ export default function StatsPage() {
               }}
             >
               Crazy Time Stats –{" "}
-              <span
-                style={{
-                  background: "linear-gradient(135deg, #FFC107, #C084FC)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                  backgroundClip: "text",
-                  textShadow: "0 2px 8px rgba(0,0,0,0.9)",
-                }}
-              >
+              <span style={{ color: "#FFD700", textShadow: "0 0 10px rgba(255,215,0,0.5), 0 2px 8px rgba(0,0,0,1)", WebkitTextStroke: "0.5px rgba(0,0,0,0.3)" }}>
                 Statistiche Live e Risultati in Tempo Reale
               </span>
             </h1>
