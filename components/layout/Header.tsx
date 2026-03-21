@@ -12,6 +12,7 @@ export default function Header() {
   const pathname = usePathname();
 
   return (
+    <>
     <header
       style={{
         position: "sticky",
@@ -108,8 +109,10 @@ export default function Header() {
         </button>
       </div>
 
-      {/* Mobile menu overlay */}
-      <MobileMenu isOpen={menuOpen} onClose={() => setMenuOpen(false)} currentPath={pathname} />
     </header>
+
+      {/* Mobile menu overlay — outside header to avoid backdrop-filter containing block */}
+      <MobileMenu isOpen={menuOpen} onClose={() => setMenuOpen(false)} currentPath={pathname} />
+    </>
   );
 }
