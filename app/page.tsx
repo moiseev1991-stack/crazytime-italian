@@ -157,13 +157,15 @@ export default function HomePage() {
               display: "inline-flex",
               alignItems: "center",
               gap: "6px",
-              backgroundColor: "rgba(123,47,190,0.45)",
-              border: "1px solid rgba(192,132,252,0.7)",
+              background: "rgba(0,0,0,0.6)",
+              backdropFilter: "blur(8px)",
+              WebkitBackdropFilter: "blur(8px)",
+              border: "1px solid rgba(255,255,255,0.15)",
               borderRadius: "999px",
               padding: "6px 16px",
               marginBottom: "24px",
               fontSize: "0.8rem",
-              color: "#FFFFFF",
+              color: "#e2e8f0",
               letterSpacing: "0.05em",
               textShadow: "0 1px 4px rgba(0,0,0,0.9)",
             }}
@@ -182,9 +184,8 @@ export default function HomePage() {
             }}
           >
             <span style={{ color: "#F8FAFC" }}>Crazy Time Italia –{" "}</span>
-            <span style={{ color: "#FFC107", textShadow: "0 2px 8px rgba(0,0,0,1), 0 0 20px rgba(255,193,7,0.4)" }}>
-              Stats Live, Demo Gratis e Diretta Streaming
-            </span>
+            <span style={{ color: "#FFD700", textShadow: "0 0 10px rgba(255,215,0,0.5), 0 2px 8px rgba(0,0,0,1)", WebkitTextStroke: "0.5px rgba(0,0,0,0.3)" }}>Stats Live, </span>
+            <span style={{ color: "#D8B4FE", textShadow: "0 0 10px rgba(216,180,254,0.5), 0 2px 8px rgba(0,0,0,1)", WebkitTextStroke: "0.5px rgba(0,0,0,0.3)" }}>Demo Gratis e Diretta Streaming</span>
           </h1>
 
           <p
@@ -226,7 +227,7 @@ export default function HomePage() {
               { icon: <CheckCircle size={13} strokeWidth={2} color="#E2E8F0" />, text: "Dati RTP Verificati" },
               { icon: <Smartphone size={13} strokeWidth={2} color="#E2E8F0" />, text: "Ottimizzato Mobile" },
             ].map((badge) => (
-              <span key={badge.text} style={{ background: "rgba(0,0,0,0.65)", border: "1px solid rgba(255,255,255,0.15)", backdropFilter: "blur(6px)", borderRadius: "8px", padding: "6px 12px", color: "#FFFFFF", fontSize: "0.8rem", display: "inline-flex", alignItems: "center", gap: "5px", textShadow: "0 1px 4px rgba(0,0,0,0.9)" }}>
+              <span key={badge.text} style={{ background: "rgba(0,0,0,0.55)", backdropFilter: "blur(6px)", WebkitBackdropFilter: "blur(6px)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: "8px", padding: "8px 14px", color: "#e2e8f0", fontSize: "0.85rem", fontWeight: 500, display: "inline-flex", alignItems: "center", gap: "6px", textShadow: "0 1px 4px rgba(0,0,0,0.9)" }}>
                 {badge.icon}{badge.text}
               </span>
             ))}
