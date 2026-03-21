@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect } from "react";
 import Link from "next/link";
 import { NAV_LINKS } from "@/lib/constants";
 
@@ -10,6 +11,15 @@ interface MobileMenuProps {
 }
 
 export default function MobileMenu({ isOpen, onClose, currentPath }: MobileMenuProps) {
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => { document.body.style.overflow = ""; };
+  }, [isOpen]);
+
   if (!isOpen) return null;
 
   return (
@@ -19,75 +29,44 @@ export default function MobileMenu({ isOpen, onClose, currentPath }: MobileMenuP
       aria-label="Navigation menu"
       style={{
         position: "fixed",
-        inset: 0,
-        zIndex: 100,
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
+        zIndex: 9999,
+        background: "#0F0A1A",
         display: "flex",
+        flexDirection: "column",
+        padding: "80px 24px 24px",
+        overflowY: "auto",
       }}
     >
-      {/* Backdrop */}
-      <div
+      {/* Close button */}
+      <button
         onClick={onClose}
+        aria-label="Chiudi menu"
         style={{
           position: "absolute",
-          inset: 0,
-          backgroundColor: "rgba(0,0,0,0.7)",
-        }}
-        aria-hidden="true"
-      />
-
-      {/* Menu panel */}
-      <nav
-        style={{
-          position: "relative",
-          width: "280px",
-          height: "100%",
-          backgroundColor: "#1A1128",
-          borderRight: "1px solid #2D2245",
-          padding: "24px 16px",
+          top: "16px",
+          right: "16px",
+          background: "transparent",
+          border: "none",
+          cursor: "pointer",
+          color: "#F8FAFC",
+          padding: "8px",
           display: "flex",
-          flexDirection: "column",
-          gap: "8px",
+          alignItems: "center",
+          justifyContent: "center",
         }}
-        aria-label="Mobile navigation"
       >
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            marginBottom: "24px",
-          }}
-        >
-          <span
-            style={{
-              fontSize: "1.3rem",
-              fontWeight: 800,
-              background: "linear-gradient(135deg, #F59E0B, #7B2FBE)",
-              WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent",
-              backgroundClip: "text",
-            }}
-          >
-            CrazyTime
-          </span>
-          <button
-            onClick={onClose}
-            aria-label="Chiudi menu"
-            style={{
-              background: "transparent",
-              border: "none",
-              cursor: "pointer",
-              color: "#94A3B8",
-              padding: "4px",
-            }}
-          >
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              <line x1="18" y1="6" x2="6" y2="18" />
-              <line x1="6" y1="6" x2="18" y2="18" />
-            </svg>
-          </button>
-        </div>
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </button>
 
+      {/* Links */}
+      <nav style={{ display: "flex", flexDirection: "column", gap: "4px" }} aria-label="Mobile navigation">
         {NAV_LINKS.map((link) => {
           const isActive = currentPath === link.href;
           return (
@@ -96,14 +75,12 @@ export default function MobileMenu({ isOpen, onClose, currentPath }: MobileMenuP
               href={link.href}
               onClick={onClose}
               style={{
-                padding: "14px 16px",
-                borderRadius: "8px",
-                textDecoration: "none",
-                fontSize: "1rem",
-                fontWeight: isActive ? 600 : 400,
                 color: isActive ? "#F59E0B" : "#F8FAFC",
-                backgroundColor: isActive ? "rgba(245, 158, 11, 0.1)" : "transparent",
-                borderLeft: isActive ? "3px solid #F59E0B" : "3px solid transparent",
+                fontSize: "1.25rem",
+                fontWeight: 600,
+                padding: "16px 0",
+                borderBottom: "1px solid rgba(255,255,255,0.08)",
+                textDecoration: "none",
                 display: "block",
               }}
             >
@@ -111,19 +88,14 @@ export default function MobileMenu({ isOpen, onClose, currentPath }: MobileMenuP
             </Link>
           );
         })}
-
-        <div
-          style={{
-            marginTop: "auto",
-            paddingTop: "24px",
-            borderTop: "1px solid #2D2245",
-          }}
-        >
-          <p style={{ fontSize: "0.75rem", color: "#94A3B8", textAlign: "center" }}>
-            18+ | Gioca Responsabilmente
-          </p>
-        </div>
       </nav>
+
+      {/* Footer */}
+      <div style={{ marginTop: "auto", paddingTop: "24px" }}>
+        <p style={{ fontSize: "0.75rem", color: "#64748B", textAlign: "center" }}>
+          18+ | Gioca Responsabilmente
+        </p>
+      </div>
     </div>
   );
 }
