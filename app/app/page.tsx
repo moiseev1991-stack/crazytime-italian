@@ -110,7 +110,8 @@ export default function AppPage() {
             priority
             quality={80}
           />
-          <div style={{ position: "absolute", inset: 0, backgroundColor: "rgba(0,0,0,0.60)" }} aria-hidden="true" />
+          <div style={{ position: "absolute", inset: 0, backgroundColor: "rgba(0,0,0,0.70)" }} aria-hidden="true" />
+          <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse at center, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.2) 70%, transparent 100%)" }} aria-hidden="true" />
           <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: "100px", background: "linear-gradient(to top, #0F0A1A, transparent)" }} aria-hidden="true" />
           <div style={{ position: "relative", zIndex: 10, padding: "40px 32px" }}>
             <h1
@@ -120,21 +121,23 @@ export default function AppPage() {
                 color: "#F8FAFC",
                 margin: "0 0 12px",
                 lineHeight: 1.2,
+                textShadow: "0 2px 8px rgba(0,0,0,1), 0 4px 24px rgba(0,0,0,0.8)",
               }}
             >
               Crazy Time App –{" "}
               <span
                 style={{
-                  background: "linear-gradient(135deg, #F59E0B, #7B2FBE)",
+                  background: "linear-gradient(135deg, #FFC107, #C084FC)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                   backgroundClip: "text",
+                  textShadow: "0 2px 8px rgba(0,0,0,0.9)",
                 }}
               >
                 Download Gratis Android e iOS
               </span>
             </h1>
-            <p style={{ color: "rgba(255,255,255,0.85)", fontSize: "1rem", lineHeight: "1.7", margin: 0 }}>
+            <p style={{ color: "rgb(226, 232, 240)", fontSize: "1rem", lineHeight: "1.7", margin: 0, textShadow: "0 1px 6px rgba(0,0,0,0.9)" }}>
               Accedi a Crazy Time dal tuo dispositivo mobile, ovunque tu sia.
             </p>
           </div>

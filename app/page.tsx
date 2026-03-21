@@ -147,7 +147,8 @@ export default function HomePage() {
           priority
           quality={80}
         />
-        <div style={{ position: "absolute", inset: 0, backgroundColor: "rgba(0,0,0,0.60)" }} aria-hidden="true" />
+        <div style={{ position: "absolute", inset: 0, backgroundColor: "rgba(0,0,0,0.70)" }} aria-hidden="true" />
+        <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse at center, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.2) 70%, transparent 100%)" }} aria-hidden="true" />
         <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: "140px", background: "linear-gradient(to top, #0F0A1A, transparent)" }} aria-hidden="true" />
 
         <div style={{ maxWidth: "800px", margin: "0 auto", position: "relative", zIndex: 10, padding: "80px 16px 100px" }}>
@@ -176,16 +177,17 @@ export default function HomePage() {
               lineHeight: 1.1,
               margin: "0 0 20px",
               letterSpacing: "-0.02em",
-              textShadow: "0 2px 12px rgba(0,0,0,0.8)",
+              textShadow: "0 2px 8px rgba(0,0,0,1), 0 4px 24px rgba(0,0,0,0.8)",
             }}
           >
             <span style={{ color: "#F8FAFC" }}>Crazy Time Italia –{" "}</span>
             <span
               style={{
-                background: "linear-gradient(135deg, #F59E0B 0%, #7B2FBE 60%)",
+                background: "linear-gradient(135deg, #FFC107 0%, #C084FC 60%)",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
                 backgroundClip: "text",
+                textShadow: "0 2px 8px rgba(0,0,0,0.9)",
               }}
             >
               Stats Live, Demo Gratis e Diretta Streaming
@@ -194,14 +196,14 @@ export default function HomePage() {
 
           <p
             style={{
-              color: "rgba(255,255,255,0.85)",
+              color: "rgb(226, 232, 240)",
               fontSize: "clamp(1rem, 2vw, 1.2rem)",
               lineHeight: 1.7,
               margin: "0 0 36px",
               maxWidth: "600px",
               marginLeft: "auto",
               marginRight: "auto",
-              textShadow: "0 2px 12px rgba(0,0,0,0.8)",
+              textShadow: "0 1px 6px rgba(0,0,0,0.9)",
             }}
           >
             Il game show live casino più popolare di Evolution Gaming: una ruota a 54 segmenti, quattro round bonus mozzafiato e moltiplicatori fino a{" "}
@@ -227,11 +229,11 @@ export default function HomePage() {
             }}
           >
             {[
-              { icon: <Lock size={13} strokeWidth={2} color="#64748B" />, text: "Casinò Autorizzati" },
-              { icon: <CheckCircle size={13} strokeWidth={2} color="#64748B" />, text: "Dati RTP Verificati" },
-              { icon: <Smartphone size={13} strokeWidth={2} color="#64748B" />, text: "Ottimizzato Mobile" },
+              { icon: <Lock size={13} strokeWidth={2} color="#E2E8F0" />, text: "Casinò Autorizzati" },
+              { icon: <CheckCircle size={13} strokeWidth={2} color="#E2E8F0" />, text: "Dati RTP Verificati" },
+              { icon: <Smartphone size={13} strokeWidth={2} color="#E2E8F0" />, text: "Ottimizzato Mobile" },
             ].map((badge) => (
-              <span key={badge.text} style={{ color: "#64748B", fontSize: "0.8rem", display: "inline-flex", alignItems: "center", gap: "5px" }}>
+              <span key={badge.text} style={{ background: "rgba(0,0,0,0.5)", backdropFilter: "blur(4px)", borderRadius: "8px", padding: "6px 12px", color: "rgb(226, 232, 240)", fontSize: "0.8rem", display: "inline-flex", alignItems: "center", gap: "5px", textShadow: "0 1px 4px rgba(0,0,0,0.8)" }}>
                 {badge.icon}{badge.text}
               </span>
             ))}

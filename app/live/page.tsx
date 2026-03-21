@@ -87,7 +87,8 @@ export default function LivePage() {
             priority
             quality={80}
           />
-          <div style={{ position: "absolute", inset: 0, backgroundColor: "rgba(0,0,0,0.60)" }} aria-hidden="true" />
+          <div style={{ position: "absolute", inset: 0, backgroundColor: "rgba(0,0,0,0.70)" }} aria-hidden="true" />
+          <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse at center, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.2) 70%, transparent 100%)" }} aria-hidden="true" />
           <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: "100px", background: "linear-gradient(to top, #0F0A1A, transparent)" }} aria-hidden="true" />
           {/* Live badge */}
           <div style={{ position: "absolute", top: "20px", right: "20px", zIndex: 10, display: "flex", alignItems: "center", gap: "6px", background: "rgba(239,68,68,0.9)", borderRadius: "999px", padding: "6px 14px" }}>
@@ -102,21 +103,23 @@ export default function LivePage() {
                 color: "#F8FAFC",
                 margin: "0 0 12px",
                 lineHeight: 1.2,
+                textShadow: "0 2px 8px rgba(0,0,0,1), 0 4px 24px rgba(0,0,0,0.8)",
               }}
             >
               Crazy Time Live –{" "}
               <span
                 style={{
-                  background: "linear-gradient(135deg, #EF4444, #F59E0B)",
+                  background: "linear-gradient(135deg, #EF4444, #FFC107)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                   backgroundClip: "text",
+                  textShadow: "0 2px 8px rgba(0,0,0,0.9)",
                 }}
               >
                 Diretta Streaming 24h con Statistiche Italia
               </span>
             </h1>
-            <p style={{ color: "rgba(255,255,255,0.85)", fontSize: "1rem", lineHeight: "1.7", margin: 0 }}>
+            <p style={{ color: "rgb(226, 232, 240)", fontSize: "1rem", lineHeight: "1.7", margin: 0, textShadow: "0 1px 6px rgba(0,0,0,0.9)" }}>
               Streaming live 24/7 direttamente dallo studio Evolution Gaming.
             </p>
           </div>
