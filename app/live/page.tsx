@@ -95,7 +95,7 @@ export default function LivePage() {
             <span style={{ width: "8px", height: "8px", borderRadius: "50%", background: "#fff", display: "inline-block" }} />
             <span style={{ color: "#fff", fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.1em" }}>LIVE 24/7</span>
           </div>
-          <div style={{ position: "relative", zIndex: 10, padding: "40px 32px", maxWidth: "720px" }}>
+          <div className="hero-sub-content" style={{ position: "relative", zIndex: 10, padding: "40px 32px", maxWidth: "720px" }}>
             <h1
               style={{
                 fontSize: "clamp(1.8rem, 4vw, 2.8rem)",

@@ -128,6 +128,7 @@ export default function HomePage() {
 
       {/* ===== HERO ===== */}
       <section
+        className="hero-main-section"
         style={{
           position: "relative",
           minHeight: "520px",
@@ -151,7 +152,7 @@ export default function HomePage() {
         <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse at center, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.2) 70%, transparent 100%)" }} aria-hidden="true" />
         <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: "140px", background: "linear-gradient(to top, #0F0A1A, transparent)" }} aria-hidden="true" />
 
-        <div style={{ maxWidth: "800px", margin: "0 auto", position: "relative", zIndex: 10, padding: "80px 16px 100px" }}>
+        <div className="hero-main-content" style={{ maxWidth: "800px", margin: "0 auto", position: "relative", zIndex: 10, padding: "80px 16px 100px" }}>
           <div
             style={{
               display: "inline-flex",

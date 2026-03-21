@@ -304,3 +304,34 @@ body {
     animation: none !important;
   }
 }
+
+/* ===== Mobile responsive ===== */
+
+/* Nav toggle: hide hamburger on desktop, show on mobile */
+.mobile-menu-btn {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  /* Navigation */
+  .desktop-nav {
+    display: none !important;
+  }
+  .mobile-menu-btn {
+    display: flex !important;
+  }
+
+  /* Hero — main page: reduce height and padding */
+  .hero-main-section {
+    min-height: 0 !important;
+    max-height: 85vh !important;
+  }
+  .hero-main-content {
+    padding: 40px 16px 56px !important;
+  }
+
+  /* Hero — sub pages: reduce horizontal padding */
+  .hero-sub-content {
+    padding: 24px 16px !important;
+  }
+}

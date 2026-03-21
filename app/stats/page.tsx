@@ -57,7 +57,7 @@ export default function StatsPage() {
           <div style={{ position: "absolute", inset: 0, backgroundColor: "rgba(0,0,0,0.70)" }} aria-hidden="true" />
           <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse at center, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.2) 70%, transparent 100%)" }} aria-hidden="true" />
           <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: "100px", background: "linear-gradient(to top, #0F0A1A, transparent)" }} aria-hidden="true" />
-          <div style={{ position: "relative", zIndex: 10, padding: "40px 32px", maxWidth: "720px" }}>
+          <div className="hero-sub-content" style={{ position: "relative", zIndex: 10, padding: "40px 32px", maxWidth: "720px" }}>
             <h1
               style={{
                 fontSize: "clamp(1.8rem, 4vw, 2.8rem)",

@@ -50,7 +50,7 @@ export default function Header() {
         </Link>
 
         {/* Desktop navigation */}
-        <nav aria-label="Main navigation" style={{ display: "flex", gap: "4px" }}>
+        <nav aria-label="Main navigation" className="desktop-nav" style={{ display: "flex", gap: "4px" }}>
           {NAV_LINKS.map((link) => {
             const isActive = pathname === link.href;
             return (
@@ -92,7 +92,6 @@ export default function Header() {
           aria-label="Open navigation menu"
           aria-expanded={menuOpen}
           style={{
-            display: "none",
             background: "transparent",
             border: "none",
             cursor: "pointer",
@@ -111,13 +110,6 @@ export default function Header() {
 
       {/* Mobile menu overlay */}
       <MobileMenu isOpen={menuOpen} onClose={() => setMenuOpen(false)} currentPath={pathname} />
-
-      <style>{`
-        @media (max-width: 768px) {
-          nav { display: none !important; }
-          .mobile-menu-btn { display: block !important; }
-        }
-      `}</style>
     </header>
   );
 }
