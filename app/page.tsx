@@ -157,17 +157,18 @@ export default function HomePage() {
               display: "inline-flex",
               alignItems: "center",
               gap: "6px",
-              backgroundColor: "rgba(123,47,190,0.2)",
-              border: "1px solid rgba(123,47,190,0.4)",
+              backgroundColor: "rgba(123,47,190,0.45)",
+              border: "1px solid rgba(192,132,252,0.7)",
               borderRadius: "999px",
               padding: "6px 16px",
               marginBottom: "24px",
               fontSize: "0.8rem",
-              color: "#94A3B8",
+              color: "#FFFFFF",
               letterSpacing: "0.05em",
+              textShadow: "0 1px 4px rgba(0,0,0,0.9)",
             }}
           >
-            <span style={{ color: "#7B2FBE" }}>●</span> GAME SHOW LIVE CASINO DI EVOLUTION GAMING
+            <span style={{ color: "#C084FC" }}>●</span> GAME SHOW LIVE CASINO DI EVOLUTION GAMING
           </div>
 
           <h1
@@ -181,15 +182,7 @@ export default function HomePage() {
             }}
           >
             <span style={{ color: "#F8FAFC" }}>Crazy Time Italia –{" "}</span>
-            <span
-              style={{
-                background: "linear-gradient(135deg, #FFC107 0%, #C084FC 60%)",
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
-                backgroundClip: "text",
-                textShadow: "0 2px 8px rgba(0,0,0,0.9)",
-              }}
-            >
+            <span style={{ color: "#FFC107", textShadow: "0 2px 8px rgba(0,0,0,1), 0 0 20px rgba(255,193,7,0.4)" }}>
               Stats Live, Demo Gratis e Diretta Streaming
             </span>
           </h1>
@@ -233,7 +226,7 @@ export default function HomePage() {
               { icon: <CheckCircle size={13} strokeWidth={2} color="#E2E8F0" />, text: "Dati RTP Verificati" },
               { icon: <Smartphone size={13} strokeWidth={2} color="#E2E8F0" />, text: "Ottimizzato Mobile" },
             ].map((badge) => (
-              <span key={badge.text} style={{ background: "rgba(0,0,0,0.5)", backdropFilter: "blur(4px)", borderRadius: "8px", padding: "6px 12px", color: "rgb(226, 232, 240)", fontSize: "0.8rem", display: "inline-flex", alignItems: "center", gap: "5px", textShadow: "0 1px 4px rgba(0,0,0,0.8)" }}>
+              <span key={badge.text} style={{ background: "rgba(0,0,0,0.65)", border: "1px solid rgba(255,255,255,0.15)", backdropFilter: "blur(6px)", borderRadius: "8px", padding: "6px 12px", color: "#FFFFFF", fontSize: "0.8rem", display: "inline-flex", alignItems: "center", gap: "5px", textShadow: "0 1px 4px rgba(0,0,0,0.9)" }}>
                 {badge.icon}{badge.text}
               </span>
             ))}
