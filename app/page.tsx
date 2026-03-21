@@ -185,7 +185,7 @@ export default function HomePage() {
           >
             <span style={{ color: "#F8FAFC" }}>Crazy Time Italia –{" "}</span>
             <span style={{ color: "#FFD700", textShadow: "0 0 10px rgba(255,215,0,0.5), 0 2px 8px rgba(0,0,0,1)", WebkitTextStroke: "0.5px rgba(0,0,0,0.3)" }}>Stats Live, </span>
-            <span style={{ color: "#D8B4FE", textShadow: "0 0 10px rgba(216,180,254,0.5), 0 2px 8px rgba(0,0,0,1)", WebkitTextStroke: "0.5px rgba(0,0,0,0.3)" }}>Demo Gratis e Diretta Streaming</span>
+            <span style={{ color: "#C084FC", textShadow: "0 0 10px rgba(192,132,252,0.6), 0 2px 8px rgba(0,0,0,1)", WebkitTextStroke: "0.5px rgba(0,0,0,0.3)" }}>Demo Gratis e Diretta Streaming</span>
           </h1>
 
           <p
