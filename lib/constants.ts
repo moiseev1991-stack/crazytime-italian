@@ -1,5 +1,5 @@
-export const SITE_URL = "https://crazytimegame.info";
-export const SITE_NAME = "CrazyTimeGame";
+export const SITE_URL = "https://crazytime-italian.com";
+export const SITE_NAME = "CrazyTime Italian";
 export const SITE_DESCRIPTION =
   "Guida completa a Crazy Time di Evolution Gaming: regole, RTP, bonus round, statistiche live e consigli di strategia.";
 

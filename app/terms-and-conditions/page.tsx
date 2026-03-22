@@ -32,7 +32,7 @@ export default function TermsAndConditionsPage() {
             1. Accettazione dei termini
           </h2>
           <p>
-            Accedendo e utilizzando il sito <strong>crazytimegame.info</strong> (di seguito &quot;il Sito&quot;), l&apos;utente accetta integralmente i presenti Termini e Condizioni d&apos;uso. Se non accetti questi termini, ti preghiamo di non utilizzare il Sito.
+            Accedendo e utilizzando il sito <strong>crazytime-italian.com</strong> (di seguito &quot;il Sito&quot;), l&apos;utente accetta integralmente i presenti Termini e Condizioni d&apos;uso. Se non accetti questi termini, ti preghiamo di non utilizzare il Sito.
           </p>
         </section>
 

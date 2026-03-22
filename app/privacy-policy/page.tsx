@@ -32,7 +32,7 @@ export default function PrivacyPolicyPage() {
             1. Titolare del trattamento
           </h2>
           <p>
-            Il titolare del trattamento dei dati personali raccolti attraverso il sito <strong>crazytimegame.info</strong> (di seguito &quot;il Sito&quot;) è il gestore del sito stesso. Per qualsiasi richiesta relativa ai tuoi dati personali puoi contattarci all&apos;indirizzo email indicato nella sezione Contatti.
+            Il titolare del trattamento dei dati personali raccolti attraverso il sito <strong>crazytime-italian.com</strong> (di seguito &quot;il Sito&quot;) è il gestore del sito stesso. Per qualsiasi richiesta relativa ai tuoi dati personali puoi contattarci all&apos;indirizzo email indicato nella sezione Contatti.
           </p>
         </section>
 
