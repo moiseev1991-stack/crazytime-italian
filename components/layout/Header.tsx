@@ -92,6 +92,29 @@ export default function Header() {
             })}
           </nav>
 
+          {/* Desktop CTA */}
+          <a
+            href="/#casino"
+            className="desktop-nav"
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              background: "#F59E0B",
+              color: "#000",
+              fontWeight: 700,
+              fontSize: "0.85rem",
+              padding: "10px 20px",
+              borderRadius: "8px",
+              textDecoration: "none",
+              whiteSpace: "nowrap",
+              transition: "background 0.2s",
+            }}
+            onMouseOver={(e) => (e.currentTarget.style.background = "#EAB308")}
+            onMouseOut={(e) => (e.currentTarget.style.background = "#F59E0B")}
+          >
+            Registrati
+          </a>
+
           {/* Mobile hamburger */}
           <button
             onClick={() => setMenuOpen(true)}
@@ -186,6 +209,27 @@ export default function Header() {
               </a>
             ))}
           </nav>
+
+          {/* Mobile CTA */}
+          <div style={{ padding: "16px 20px 0" }}>
+            <a
+              href="/#casino"
+              onClick={() => setMenuOpen(false)}
+              style={{
+                display: "block",
+                background: "#F59E0B",
+                color: "#000",
+                fontWeight: 700,
+                fontSize: "1.1rem",
+                padding: "16px",
+                borderRadius: "10px",
+                textDecoration: "none",
+                textAlign: "center",
+              }}
+            >
+              Registrati — Gioca Ora
+            </a>
+          </div>
 
           {/* Footer */}
           <div
