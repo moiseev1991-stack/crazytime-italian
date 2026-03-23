@@ -4,7 +4,7 @@ import { SITE_URL } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Termini e Condizioni – Crazy Time Italia",
   description: "Termini e condizioni d'uso del sito Crazy Time Italia. Leggi le regole di utilizzo del sito prima di navigare.",
-  robots: "noindex, follow",
+  robots: "index, follow",
   alternates: { canonical: `${SITE_URL}/terms-and-conditions` },
 };
 

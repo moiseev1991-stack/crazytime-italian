@@ -4,7 +4,7 @@ import { SITE_URL } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Privacy Policy – Crazy Time Italia",
   description: "Informativa sulla privacy di Crazy Time Italia. Come raccogliamo, utilizziamo e proteggiamo i tuoi dati personali.",
-  robots: "noindex, follow",
+  robots: "index, follow",
   alternates: { canonical: `${SITE_URL}/privacy-policy` },
 };
 

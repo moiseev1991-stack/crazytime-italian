@@ -4,7 +4,7 @@ import { SITE_URL } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Gioco Responsabile – Crazy Time Italia",
   description: "Informazioni sul gioco responsabile: come giocare in sicurezza, riconoscere i segnali di rischio e dove trovare aiuto in Italia.",
-  robots: "noindex, follow",
+  robots: "index, follow",
   alternates: { canonical: `${SITE_URL}/responsible-gaming` },
 };
 

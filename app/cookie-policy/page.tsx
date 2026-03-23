@@ -4,7 +4,7 @@ import { SITE_URL } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Cookie Policy – Crazy Time Italia",
   description: "Cookie Policy di Crazy Time Italia. Informazioni sui cookie utilizzati dal sito e come gestirli.",
-  robots: "noindex, follow",
+  robots: "index, follow",
   alternates: { canonical: `${SITE_URL}/cookie-policy` },
 };
 
